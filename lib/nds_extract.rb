@@ -64,7 +64,6 @@ def movies_with_director_key(name, movies_collection)
     director_name = name
     result[director_name] = test_set
     updated_movies[index]  = result
-    binding.pry
     index += 1 
     
   end 
