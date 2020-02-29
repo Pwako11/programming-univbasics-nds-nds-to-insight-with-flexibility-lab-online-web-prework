@@ -62,8 +62,10 @@ def movies_with_director_key(name, movies_collection)
   while index < movies_collection.length do 
     movie_data = movies_collection
     director_name = name
-    result[director_name] = movie_data
+    result[index][director_name] = movie_data
+    binding.pry
     updated_movies[index]  = result
+    
     index += 1 
     
   end 
