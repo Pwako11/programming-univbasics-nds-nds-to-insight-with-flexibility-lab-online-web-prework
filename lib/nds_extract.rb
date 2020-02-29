@@ -84,11 +84,14 @@ def movies_with_directors_set(source)
   new_array = []
   index = 0 
   
-  while index < source do 
-    
+  while index < source.length do
+    dir_infor_hash = source[index]
+    director_name = dir_infor_hash[:name]
+    directors_movies = dir_infor_hash[:movies]
+    new_array << movies_with_director_key(director_name, directors_movies)
     index += 1 
   end 
-  
+  new_array
   
 end
 
