@@ -62,7 +62,7 @@ def movies_with_director_key(name, movies_collection)
     test_set = movies_collection[i]
     updated_movies << movie_with_director_name(name, test_set)
     index += 1 
-    binding.pry
+    
   end 
   updated_movies
 end
