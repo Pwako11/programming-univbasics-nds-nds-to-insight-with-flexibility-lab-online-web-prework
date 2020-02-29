@@ -56,7 +56,6 @@ def movies_with_director_key(name, movies_collection)
   # movie_with_director_name method
   
   updated_movies = []
-  result = {}
   index = 0 
   
   while index < movies_collection.length do 
